@@ -1,0 +1,514 @@
+body {
+  overflow: hidden;
+}
+
+#what .items {
+  display: block;
+  padding: 1rem;
+}
+
+/* Align icon to left */
+#what .items .item {
+  display: flex;
+  text-align: left;
+}
+
+/* Position icon */
+#what .items .item i {
+  margin-right: 1.3rem;
+  align-self: center;
+  margin-bottom: 0;
+}
+/* utilities */
+.btn {
+  padding: 0.7rem;
+  font-size: 1.2rem;
+}
+
+/* Section: team Who We Are */
+
+#team .team-member h2 {
+  font-size: 19px;
+}
+#team .team-member p {
+  font-size: 17px;
+}
+
+#team .teams .team-member img {
+  padding: 1rem;
+  width: 200px;
+}
+#team .teams .team-member i {
+  background: #7ab436;
+  color: #fff;
+}
+/* team */
+#projects {
+  overflow: hidden;
+}
+#projects h2 {
+  text-align: center;
+  padding-top: 8.3rem !important;
+}
+#projects .project {
+  display: grid;
+  grid-area: "world body" "ad phono" "stock";
+  margin: 0 !important;
+}
+#projects .project a:nth-child(1) {
+  grid-area: world;
+}
+
+#projects .project a:last-child {
+  display: none;
+}
+#projects .btn {
+  margin: auto 300px;
+  margin-top: 5rem;
+}
+
+/* Section: Contact */
+#contact {
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "c-form g-map"
+    "p-footer p-footer";
+  grid-gap: 0.1rem !important;
+  margin: 0;
+
+  margin-bottom: 0;
+}
+#contact .contact-form {
+  width: 400px;
+  margin-top: 10rem !important;
+}
+
+#contact .map {
+  width: 310px;
+  margin-top: 12rem !important;
+
+  margin-bottom: 2.9rem;
+}
+
+/* Smartphones */
+@media (max-width: 450px) {
+  body {
+    overflow: hidden !important;
+  }
+  #navbar {
+    flex-direction: column;
+    align-items: center;
+    background: #000;
+  }
+
+  #navbar .logo {
+    padding-bottom: 1.1rem;
+    text-align: center;
+  }
+
+  #navbar ul {
+    flex: 1;
+    height: 1.4rem;
+    padding-right: 1.9rem;
+  }
+  .up-home {
+    top: 100px;
+    bottom: 200px;
+  }
+  #header a {
+    bottom: 30px !important;
+  }
+  #header .l-heading {
+    font-size: 3rem;
+  }
+
+  /* what */
+
+  #what {
+    height: 100vh !important;
+  }
+  #what .m-heading {
+    margin-top: 100px !important;
+    font-size: 1.6rem;
+  }
+  #what h2 {
+    font-size: 18px;
+  }
+  #what .items {
+    display: block;
+    margin-top: 0 !important;
+    padding: 0 !important;
+  }
+
+  #what .items .item {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  #what .items .item i {
+    padding: 0.7rem;
+    font-size: 1.9rem;
+  }
+  #what .items .item p {
+    font-size: 14px;
+  }
+  /* who | team */
+  #team {
+    overflow: hidden;
+  }
+  #team .container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  #team .teams {
+    display: block;
+  }
+  #team .m-heading {
+    margin-top: 90px !important;
+    font-size: 1.7rem;
+    margin-bottom: 0 !important;
+  }
+  #team .team-member {
+    display: flex;
+  }
+  #team .team-member img {
+    height: 160px !important;
+    width: 160px !important;
+    margin-right: 1rem !important;
+  }
+  #team .team-member i {
+    font-size: 1.3rem;
+  }
+  #team img {
+    /* width: 180px !important; */
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  #projects .m-heading {
+    margin-top: 30px !important;
+    font-size: 1.9rem;
+    margin-bottom: 0 !important;
+  }
+  #projects {
+    height: 100vh;
+  }
+  #projects h2 {
+    text-align: center;
+
+    padding-top: 8rem !important;
+  }
+  #projects .project {
+    display: block;
+
+    /* text-align: center; */
+  }
+  #projects .project img {
+    margin-top: 3rem;
+    padding: 0.1rem 1rem;
+  }
+  #projects .btn {
+    display: block;
+    text-align: center;
+    margin: auto 140px;
+    margin-top: 1.2rem;
+    /* margin-top: 1rem; */
+  }
+
+  /* contact */
+  #contact {
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+      "c-form"
+      "g-map"
+      "p-footer";
+    grid-gap: 4px;
+
+    /* margin-bottom: 0; */
+  }
+  #contact .m-heading {
+    margin-top: 4.2rem !important;
+    font-size: 2rem !important;
+    margin-bottom: 0 !important;
+  }
+  #contact .contact-form {
+    margin-top: 0.6rem !important;
+    grid-area: c-form;
+    line-height: 1.8rem !important;
+    right: 0;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    /* width: 24.8rem !important; */
+  }
+
+  #contact .map {
+    grid-area: g-map;
+    height: 20rem !important;
+    width: 23rem !important;
+    border-radius: 4px;
+    margin-top: 0 !important;
+    margin-left: 1.7rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  #contact footer {
+    margin-top: 0;
+    grid-area: p-footer;
+    text-align: center;
+    background: #222;
+    /* padding: 1rem; */
+    /* padding-bottom: -2rem !important; */
+    font-size: 1rem;
+    height: 1.2rem !important;
+    width: 100%;
+  }
+  #contact .contact-form label {
+    display: inline;
+  }
+
+  #contact .contact-form input,
+  #contact .contact-form textarea {
+    width: 100%;
+    padding: 0.2rem;
+  }
+  #contact .contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+/* iphone 5/SE */
+@media (max-height: 568px) {
+  /* body {
+    overflow: hidden !important;
+  }
+  #navbar {
+    flex-direction: column;
+    align-items: center;
+    background: #000;
+  }
+
+  #navbar .logo {
+    padding-bottom: 0.2rem !important;
+    text-align: center;
+  }
+
+  #navbar ul {
+    height: 1.4rem;
+    padding: auto 0.1rem !important;
+  }
+  #navbar ul li {
+    height: 1.4rem;
+    padding: auto 0.1rem !important;
+    margin: auto 0.1rem !important;
+  }
+
+  #navbar ul li a {
+    color: #fff;
+    padding: 0.2rem;
+    margin: 0 0.25rem;
+  }
+  #navbar ul li a:hover {
+    background: #7ab436;
+  } */
+}
+
+/* iphone 6/7/8 */
+@media (max-width: 376px) {
+  body {
+    overflow: hidden !important;
+    overflow-x: hidden;
+  }
+  #navbar {
+    flex-direction: column;
+    align-items: center;
+    background: #000;
+  }
+
+  #navbar .logo {
+    padding-bottom: 0.5rem !important;
+  }
+
+  #navbar ul li {
+    height: 1.4rem;
+    font-size: 0.1rem !important;
+
+    /* padding: auto 0.1rem !important; */
+    margin-right: 0 !important;
+  }
+  #navbar ul li:last-child {
+    margin-right: -1rem !important;
+  }
+
+  #navbar ul li a {
+    color: #fff;
+    padding: 0.4rem 0.3rem !important;
+    font-size: 0.9rem !important;
+  }
+  #navbar ul li:last-child {
+    margin-right: -3rem !important;
+  }
+
+  #navbar ul li a:hover {
+    background: #7ab436;
+  }
+  #header {
+    height: 400px !important;
+    overflow: hidden;
+  }
+  #header br:first-child {
+    display: none;
+  }
+  .up-home {
+    top: 5.9rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+
+    position: absolute;
+    /* top: 65px; */
+    left: 2.4rem;
+    /* right: 0; */
+
+    /* background-color: rgba(0, 0, 0, 0.4); */
+  }
+  #header a {
+    /* bottom: 14rem !important; */
+    margin-top: -3rem;
+    font-size: 1rem !important;
+  }
+  #header h1 {
+    font-size: 2.5rem;
+    padding: 0 2rem;
+    line-height: 3.7rem;
+    margin-top: -10rem;
+  }
+  /* services */
+
+  #what .items {
+    display: block;
+    padding: 0 !important;
+    margin: 0;
+  }
+
+  /* Align icon to left */
+  #what .items .item {
+    display: flex;
+    text-align: left;
+  }
+
+  /* Position icon */
+  #what .items .item i {
+    margin-left: 1.3rem;
+    align-self: center;
+    margin-bottom: 0;
+  }
+  #what .m-heading {
+    display: none;
+  }
+  #what h2 {
+    font-size: 15px;
+    margin-bottom: 0 !important;
+  }
+
+  #what .items .item {
+    /* display: block; */
+
+    text-align: left;
+    font-size: 20px;
+    margin-right: -2rem;
+  }
+  #what .items .item:first-child {
+    margin-top: -2.7rem;
+  }
+
+  #what .items .item i {
+    padding: 0.8rem;
+    font-size: 1.9rem;
+  }
+  #what .items .item p {
+    font-size: 13px;
+  }
+  #what a {
+    padding: 0.3rem;
+    font-size: 1rem !important;
+    margin-right: -2.7rem;
+  }
+  /* team */
+  #team .m-heading {
+    display: none;
+  }
+  #team .teams {
+    margin-top: -2rem !important;
+  }
+  #team .team-member {
+    margin-right: -3rem;
+    margin-top: 0rem;
+  }
+  #team .team-member img {
+    width: 100px !important;
+    height: 100px !important;
+  }
+
+  #team .team-member h2 {
+    font-size: 1rem;
+    padding-right: 1rem;
+  }
+  #team .team-member i {
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 0.4rem;
+  }
+  #team .team-member div {
+    text-align: left;
+  }
+  #team .team-member h2:nth-child(2) {
+    padding-right: 1rem;
+  }
+  #team a:last-child {
+    padding: 0.3rem;
+    font-size: 1rem !important;
+    margin-right: -2.7rem;
+  }
+
+  /* projects */
+
+  #projects .m-heading {
+    display: none;
+  }
+  #projects {
+  }
+  #projects h2 {
+    display: none;
+  }
+  #projects .project {
+    display: block;
+    margin-top: 8rem;
+  }
+  #projects .project a:first-child {
+    padding-top: 18rem !important;
+  }
+  #projects .project img {
+    padding: 0 3rem;
+    margin-right: -2.3rem;
+    margin-bottom: -2.3rem;
+
+    width: 60% !important;
+  }
+
+  #projects .btn {
+    font-size: 1rem !important;
+    margin: 7rem 8.4rem;
+    margin-right: 2rem;
+    padding: 0.3rem 0.1rem;
+  }
+}
